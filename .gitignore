@@ -13,8 +13,10 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Archivo de entorno
+# Archivo de entorno y demás
 .env
+benchmark_results.csv
+benchmark_results_14_07_2025.csv
 
 # Logs
 *.log

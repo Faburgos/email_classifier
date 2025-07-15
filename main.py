@@ -13,7 +13,7 @@ class ClassificationResponse(BaseModel):
 @app.post("/classify-email", response_model = ClassificationResponse)
 async def classify_email_endpoint(request: EmailRequest):
     classification = classify_email(request.email_body)
-    return ClassificationResponse(classification=classification)
+    return ClassificationResponse(classification = classification)
 
 # To run the FastAPI application, use the command:
 # uvicorn main:app --reload
